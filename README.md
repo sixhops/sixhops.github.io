@@ -123,6 +123,8 @@ Created a new `index.html` page with:
 
 The page uses the existing styling system and works with the existing `bundle.js` script for modals and theme switching. The design is consistent with the resume page and suitable for a job search portfolio site.
 
+You can see the results here: <a href="https://sixhops.github.io/homepage_1.html" target="_blank">homepage_1.html</a>
+
 It ended up almost completely duplicating the content and styles from the resume page, which I did not want. I had it save this attempt as homepage_1 for comparison and then asked it to revise the page with this prompt:
 
 ```
@@ -149,6 +151,8 @@ Rename the index.html to homepage_1.html. Rename the _homePage.scss to homePage1
 7. Updated `webpack.config.js` to handle multiple entry points and set `inject: false` to prevent duplicate script tags
 
 The `homepage_2.html` page is independent with its own styling and no scripts or event handlers from the resume page. The design uses a gradient background, card-based sections, and a responsive grid for the portfolio items.
+
+You can see the results here: <a href="https://sixhops.github.io/homepage_2.html" target="_blank">homepage_2.html</a>
 
 This seemed like a decent stab so I had it save a copy as `index.html` so that I could revise it by hand.
 

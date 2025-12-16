@@ -1,7 +1,6 @@
 @use "variables" as vars;
 
 .mainContent {
-  // width: 100%;
   max-width: vars.$content-max-width;
   margin: 0 auto;
   padding: 0 2rem;

@@ -77,7 +77,6 @@
       }
 
       @include mixins.min-width(1216px) {
-        // @include fonts.heading-A;
         font-size: 64px;
       }
     }
