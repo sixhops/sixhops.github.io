@@ -1,0 +1,83 @@
+@use "colors";
+@use "mixins";
+@use "fonts";
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 70vh;
+  background-color: colors.$white-cloud;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+  pointer-events: none;
+
+  border-radius: 2px;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 65, 0.3);
+
+  @include mixins.min-width(576px) {
+    width: 60vw;
+    max-width: 500px;
+    height: 70vh;
+  }
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-body {
+      overflow-y: auto;
+      flex: 1;
+      padding: 1rem;
+      color: colors.$black-true;
+      @include fonts.body-B;
+    }
+
+    &-header,
+    &-footer {
+      padding: 1rem;
+      height: 40px;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &.green {
+        color: colors.$white-true;
+        background-color: colors.$green;
+      }
+      &.yellow {
+        color: colors.$blue-navy;
+        background-color: colors.$yellow;
+      }
+      &.blue {
+        color: colors.$black-true;
+        background-color: colors.$gray-blue;
+      }
+    }
+    &-footer {
+      @include mixins.flex-center-center;
+      background-color: colors.$gray;
+      color: colors.$white-true;
+    }
+  }
+}
+
+// Prevents scrolling of body when modal is open
+body.modal-open {
+  overflow: hidden;
+}

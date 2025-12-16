@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+@mixin roboto($weight) {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@mixin archivo-black-regular($weight) {
+  font-family: "Archivo Black", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@mixin body-A {
+  @include roboto(400);
+  font-size: 16px;
+}
+
+@mixin body-A--bold {
+  @include roboto(800);
+  font-size: 16px;
+}
+
+@mixin body-B {
+  @include roboto(400);
+  font-size: 20px;
+}
+
+@mixin heading-A {
+  @include archivo-black-regular(400);
+  font-size: 64px;
+}
+
+@mixin heading-A--bold {
+  @include archivo-black-regular(800);
+  font-size: 64px;
+}
+
+@mixin heading-B {
+  @include archivo-black-regular(400);
+  font-size: 32px;
+}
+
+@mixin heading-B--bold {
+  @include archivo-black-regular(800);
+  font-size: 32px;
+}
+
+@mixin heading-C {
+  @include archivo-black-regular(400);
+  font-size: 24px;
+}

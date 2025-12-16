@@ -1,0 +1,16 @@
+@use "mixins";
+
+.carousel {
+  &-items {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include mixins.min-width(576px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}

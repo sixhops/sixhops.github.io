@@ -1,0 +1,27 @@
+@use "colors";
+@use "fonts";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include fonts.body-A;
+}
+
+body {
+}
+
+h1 {
+  @include fonts.heading-A;
+}
+
+h2 {
+  @include fonts.heading-B;
+}
+
+h3 {
+  @include fonts.heading-C;
+}

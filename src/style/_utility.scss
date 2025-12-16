@@ -1,0 +1,50 @@
+@use "mixins";
+
+// Utility classes
+// Center child elements both vertically and horizontally
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Center element both horizontally and vertically
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Center text
+.text-center {
+  text-align: center;
+}
+
+// Hide element
+.hidden {
+  display: none;
+}
+
+// Hide on mobile
+.hideOnMobile {
+  @include mixins.max-width(576px) {
+    display: none;
+  }
+}
+
+// Hide on desktop
+.hideOnDesktop {
+  @include mixins.min-width(576px) {
+    display: none;
+  }
+}
+
+// Add border radius to element
+.border-radius {
+  border-radius: 10px;
+}
+
+.bold {
+  font-weight: 800;
+}
