@@ -5,12 +5,14 @@ export const skillElaborations = {
       at Amazon. Prior to that, I used and taught JavaScript for three years. I have
       proficiency with vanilla JS/TS with respect to web development, algorithm design
       and analysis, as well as libraries like jQuery and, espcially, react.`,
+    link: "",
   },
   html: {
     friendlyName: "HTML",
     elaboration: `Obviously, I am proficient in HTML, but most of my recent development
     work has been using templating languages like react's JSX, Apache's Freemarker
     Template Language, and Express's EJS.`,
+    link: "",
   },
   css: {
     friendlyName: "CSS / Sass",
@@ -18,6 +20,7 @@ export const skillElaborations = {
     CSS properties and selectors. At Amazon, I fell in love with Sass and its amazing
     powers of organization and modularity. Well-versed in modern layouts like flexbox
     and grid, I always start mobile-first and design responsively for all devices.`,
+    link: "",
   },
   java: {
     friendlyName: "Java",
@@ -26,12 +29,14 @@ export const skillElaborations = {
     on data resolvers for GraphQL endpoints and Spring route controller classes. While
     I can "read" Java for the most part but my abilities would need to rely on Stack
     Overflow and AI assistance.`,
+    link: "",
   },
   python: {
     friendlyName: "Python",
     elaboration: `I taught introductory Python in a web development context while
     working at General Assembly. Though I haven't used it very recently, it is another
     language that I can understand and muddle through with community and AI support.`,
+    link: "",
   },
   react: {
     friendlyName: "React",
@@ -40,11 +45,13 @@ export const skillElaborations = {
     new tools within the site as well as updating and adding functionality to existing
     tools. At General Assembly, I created curriculum for and taught react development
     to students. It is my favorite way to make web pages.`,
+    link: "",
   },
   node: {
     friendlyName: "Node",
     elaboration: `Like most developers, I use Node mostly to run my build environment.
     I'm experienced with node, npm, nvm, and multiple popular node modules.`,
+    link: "",
   },
   express: {
     friendlyName: "Express",
@@ -52,6 +59,7 @@ export const skillElaborations = {
     remains my favorite way to make a web application. I have experience using it
     as a web server for serving static pages and as a controller for accessing
     SQL and no-SQL databases in the making of APIs and dynamic websites.`,
+    link: "",
   },
   graphql: {
     friendlyName: "GraphQL",
@@ -59,12 +67,14 @@ export const skillElaborations = {
     and resolvers for GraphQL endpoints, I feel like there is a lot more to learn.
     Currently, I am focusing on gaining more proficiency with complex, multi-entity
     queries and exploring other ways to write and use resolvers in other languages.`,
+    link: "",
   },
   nextjs: {
     friendlyName: "Next.js",
     elaboration: `After the layoff, Next.js was the thing I wanted to learn with
     respect to spinning up new react apps. Currently I am still in the learning
     process for this tech.`,
+    link: "",
   },
   la: {
     friendlyName: "Lost Ark Marketing Site",
@@ -75,6 +85,7 @@ export const skillElaborations = {
     on multiple pages and modules on each site making sure the pages matched the
     designs to the pixel in all supported browsers. Additionally, I was responsible
     for ensuring that the sites met accessibility standards.`,
+    link: "https://www.playlostark.com/",
   },
   nw: {
     friendlyName: "New World Marketing Site",
@@ -85,6 +96,7 @@ export const skillElaborations = {
     on multiple pages and modules on each site making sure the pages matched the
     designs to the pixel in all supported browsers. Additionally, I was responsible
     for ensuring that the sites met accessibility standards.`,
+    link: "https://www.newworld.com/",
   },
   tl: {
     friendlyName: "Throne & Liberty Marketing Site",
@@ -95,5 +107,6 @@ export const skillElaborations = {
     on multiple pages and modules on each site making sure the pages matched the
     designs to the pixel in all supported browsers. Additionally, I was responsible
     for ensuring that the sites met accessibility standards.`,
+    link: "https://www.playthroneandliberty.com/",
   },
 };

@@ -9,6 +9,7 @@ let cards: HTMLCollectionOf<Element> | null;
 let modal: HTMLElement | null;
 let modalContentHeader: HTMLElement | null;
 let modalContentBody: HTMLElement | null;
+let modalContentLink: HTMLAnchorElement | null;
 
 // Theme switcher elements
 let themeSwitcherMenu: HTMLElement | null;
@@ -58,6 +59,7 @@ const handleModalOpen = (event: MouseEvent): any => {
       skillElaborations[cardId as keyof typeof skillElaborations];
     const friendlyName = skillData.friendlyName;
     const elaboration = skillData.elaboration;
+    const link = skillData.link;
 
     // Set friendlyName in modal header h3
     if (modalContentHeader) {
@@ -72,6 +74,22 @@ const handleModalOpen = (event: MouseEvent): any => {
       const childElement = modalContentBody.firstElementChild as HTMLElement;
       if (childElement) {
         childElement.textContent = elaboration;
+      }
+    }
+
+    if (modalContentLink) {
+      if (link) {
+        if (modalContentLink.hasChildNodes()) {
+          modalContentLink.removeChild(modalContentLink.firstChild as Node);
+        }
+        const newLink = document.createElement("a");
+        newLink.href = link;
+        newLink.textContent = link;
+        newLink.target = "_blank";
+        newLink.rel = "noopener noreferrer";
+        modalContentLink.appendChild(newLink);
+      } else {
+        modalContentLink.innerHTML = "";
       }
     }
   }
@@ -174,6 +192,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
   modalContentBody = document.querySelector(
     ".modal-content-body"
   ) as HTMLElement;
+  modalContentLink = document.querySelector(
+    ".modal-content-link"
+  ) as HTMLAnchorElement;
 
   // Select theme switcher elements once
   themeSwitcherMenu = document.querySelector(
